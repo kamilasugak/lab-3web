@@ -1,16 +1,257 @@
-/* Основні стилі зверху залишаються без змін */
+/* 🟡 БЛОК 1 */
+#block1 {
+    background: linear-gradient(135deg, #0A0A0A, #D4AF37);
+    color: #AA8F32;
+    font-family: 'MS Reference Specialty', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: calc(16px + 1vw);
+    padding: 1em;
+    text-align: left;
+    width: 100%;
+    min-height: 85px;
+    height: auto;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
 
-/* --- АДАПТАЦІЯ ДЛЯ СМАРТФОНІВ --- */
+/* 🟡 БЛОК 7 */
+#block7 {
+    background: linear-gradient(135deg, #0A0A0A, #D4AF37);
+    color: #0A0A0A;
+    padding: 1em;
+    text-align: right;
+    width: 100%;
+    min-height: 80px;
+    height: auto;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    font-size: calc(16px + 1vw);
+    font-style: italic;
+    font-family: 'MS Reference Specialty', sans-serif;
+    font-weight: lighter;
+}
+
+/* 🟦 MIDDLE */
+.middle-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 🟡 БЛОК 2 */
+.block2 {
+    flex: 1.5;
+    background: linear-gradient(135deg, #FAFAD2, #0A0A0A );
+    min-height: 453px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+/* Стовпець з блоками 3 і 5 */
+.left-column {
+    flex: 2.5;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+/* 🟡 БЛОК 3 */
+.block3 {
+    background-color: black;
+    color: #FAFAD2;
+    min-height: 110px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+/* 🟡 БЛОК 5 */
+.block5 {
+    background: linear-gradient(135deg, #F8F4E3, #D4AF37);
+    min-height: 343px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto;
+    height: auto;
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 0px;
+    word-break: break-word;
+}
+
+/* Стовпець з блоками 4 і 6 */
+.right-column {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+/* 🟡 БЛОК 4 */
+.block4 {
+    background: linear-gradient(135deg, #FAFAD2, #0A0A0A );
+    text-align: center;
+    min-height: 150px;
+    width: 100%;
+    color: #FFF8E7;
+    font-style: italic;
+    font-size: calc(14px + 0.5vw);
+    height: auto;
+    box-sizing: border-box;
+}
+
+/* 🟡 БЛОК 6 */
+.block6 {
+    background: linear-gradient(135deg, #FAFAD2, #0A0A0A );
+    min-height: 162px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    flex-grow: 1;
+}
+
+/* Картинка в блоці 4 */
+.block4-img {
+    width: 100%;
+    max-width: 170px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.makeup-img {
+    width: 55%;
+    max-width: 150px;
+    min-width: 180px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Заголовок меню */
+.menu-title {
+    color: darkgrey;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Посилання меню */
+.menu-list a {
+    color: darkred;
+    font-size: 1em;
+    font-style: italic;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.menu-list a:hover {
+    color: orange;
+}
+
+/* Текст у блоці 6 */
+.block6 .intro-text {
+    color: #FFF8E7;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.block6 .care-list {
+    color: darkred;
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 5px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* Текст у блоках */
+.block2 p, .block3 p, .block4 p, .block5 p, .block6 p {
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.block5 p, .block6 p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* FLEX makeup */
+.makeup-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+}
+
+.makeup-left {
+    flex: 1;
+    text-align: left;
+    min-width: 0;
+}
+
+.makeup-center {
+    flex: 2;
+    text-align: center;
+}
+
+.makeup-right {
+    flex: 1;
+    text-align: right;
+    font-size: 16px;
+    color: darkblue;
+    min-width: 0;
+}
+
+/* Прямокутна картинка */
+.block4-img-square {
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Колір посилань у блоку 5 */
+a {
+    color: darkgray;
+}
+
+/* ─── 📱 АДАПТАЦІЯ ДЛЯ СМАРТФОНІВ ─── */
+
 @media (max-width: 768px) {
+
     .middle-row {
-        flex-direction: column; /* Всі блоки стають вертикально */
+        flex-direction: column;
         align-items: stretch;
     }
 
     .block2, .left-column, .right-column {
         width: 100%;
         min-width: 100%;
-        flex: none; /* Прибираємо пропорційність */
+        flex: none;
     }
 
     .makeup-container {
@@ -34,3 +275,4 @@
         max-width: 120px;
     }
 }
+

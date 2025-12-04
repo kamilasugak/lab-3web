@@ -1,0 +1,36 @@
+/* Основні стилі зверху залишаються без змін */
+
+/* --- АДАПТАЦІЯ ДЛЯ СМАРТФОНІВ --- */
+@media (max-width: 768px) {
+    .middle-row {
+        flex-direction: column; /* Всі блоки стають вертикально */
+        align-items: stretch;
+    }
+
+    .block2, .left-column, .right-column {
+        width: 100%;
+        min-width: 100%;
+        flex: none; /* Прибираємо пропорційність */
+    }
+
+    .makeup-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .makeup-left, .makeup-center, .makeup-right {
+        text-align: center;
+    }
+
+    #block1, #block7 {
+        text-align: center;
+    }
+
+    .block3 p, .block5 p, .block4 p, .block6 p {
+        font-size: 1rem;
+    }
+
+    .block4-img {
+        max-width: 120px;
+    }
+}
